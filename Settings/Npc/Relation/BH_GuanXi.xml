@@ -1,0 +1,104 @@
+<RelationDefs><List>
+		<Relation Name="BH_BaiHeFuFu">
+		<AutoGentrate>1</AutoGentrate>
+		<DisplayNameF>妻子（百合花仙）</DisplayNameF>
+		<DisplayNameM>丈夫</DisplayNameM>
+		<Links>
+			<li From="SELF"		To="BH_BaiHeFuFu"/>
+			<li From="BH_HaiZi"	To="BH_HaiZi"/>
+		</Links>
+		<InCache>0.1</InCache>
+		<FitRelation>
+			<li>None</li>
+		</FitRelation>
+			
+		<BanRelation>	
+			<li>Lover</li>		
+		</BanRelation>
+		
+		<Favour>BH_JiaReng</Favour>
+		<SingleType>Only</SingleType>
+		<OppositeSex>0</OppositeSex>
+		<AgeMin>14</AgeMin>
+		<AgeOffsetMin>-5</AgeOffsetMin>
+		<AgeOffsetMax>10</AgeOffsetMax>
+	</Relation>
+	
+	<Relation Name="BH_HaiZi" Opposite="BH_MuQing">
+		<AutoGentrate>1</AutoGentrate>
+		<DisplayNameF>女儿（百合花仙）</DisplayNameF>
+		<DisplayNameM>儿子</DisplayNameM>
+		<ChangeName>1</ChangeName>
+		<InCache>2</InCache>
+		<Favour>BH_JiaReng</Favour>
+		<Links>
+			<li From="SELF"		To="BH_MuQing"/>
+			<li From="BH_BaiHeFuFu"	To="BH_MuQing"/>
+			<li From="BH_HaiZi"	To="BH_JieMei"/>
+		</Links>
+		<FitRelation>
+			<li>None</li>
+		</FitRelation>
+		<AgeMin>0</AgeMin>
+		<AgeOffsetMin>-30</AgeOffsetMin>
+		<AgeOffsetMax>-12</AgeOffsetMax>
+	</Relation>
+	
+	<Relation Name="BH_JieMei">
+		<AutoGentrate>1</AutoGentrate>
+		<DisplayNameF>姐姐（百合花仙）,妹妹（百合花仙）</DisplayNameF>
+		<DisplayNameM>哥哥,弟弟</DisplayNameM>
+		<ChangeName>0.5</ChangeName>
+		<Favour>BH_JiaReng</Favour>
+		<InCache>0.1</InCache>
+		<FitRelation>
+			<li>None</li>
+		</FitRelation>
+		<Links>
+			<li From="SELF"		To="BH_JieMei"/>
+			<li From="BH_JieMei"	To="BH_JieMei"/>
+			<li From="BH_MuQing"	To="BH_MuQing"/>
+		</Links>
+		<AgeMin>0</AgeMin>
+		<AgeOffsetMin>-10</AgeOffsetMin>
+		<AgeOffsetMax>10</AgeOffsetMax>
+	</Relation>
+	
+	<Relation Name="BH_MuQing" Opposite="BH_HaiZi">
+		<AutoGentrate>1</AutoGentrate>
+		<DisplayNameF>母亲（百合花仙）</DisplayNameF>
+		<DisplayNameM>父亲</DisplayNameM>
+		<Favour>BH_JiaReng</Favour>
+		<InCache>0.2</InCache>
+		<FitRelation>
+			<li>None</li>
+		</FitRelation>
+		<Links>
+			<li From="SELF"		To="BH_HaiZi"/>
+			<li From="BH_JieMei"	To="BH_HaiZi"/>
+			<li From="BH_MuQing"	To="BH_BaiHeFuFu"/>
+		</Links>
+
+		<SingleType>SexOnly</SingleType>
+		<OppositeSex>0</OppositeSex>
+		<AgeMin>20</AgeMin>
+		<AgeOffsetMin>14</AgeOffsetMin>
+		<AgeOffsetMax>30</AgeOffsetMax>
+	</Relation>
+	
+	<Relation Name="BH_JiYou"> <!--姬友-->
+		<AutoGentrate>1</AutoGentrate>
+		<DisplayNameF>姬友（百合花仙）</DisplayNameF>
+		<DisplayNameM>滚</DisplayNameM>
+		<Links>
+			<li From="SELF"		To="BH_JiYou"/>
+		</Links>
+		<InCache>0.1</InCache>
+		<FitRelation>
+			<li>None</li>
+		</FitRelation>
+		<Favour>BH_JiYou</Favour>
+		<OppositeSex>0</OppositeSex>
+		<AgeMin>12</AgeMin>
+	</Relation>
+</List></RelationDefs>

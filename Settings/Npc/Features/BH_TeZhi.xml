@@ -1,0 +1,165 @@
+﻿<FeatureDefs><List>
+	<!--
+	<Feature Name="N1" Type="Normal">
+		<DisplayName>样例</DisplayName>
+		<Desc>样例</Desc>
+		<HideInUI>1</HideInUI>
+		<Mutex>互斥特性
+				<li>CrippleLeft</li>
+				<li>CrippleRight</li>
+		</Mutex>
+		<BanRelations>
+				<li>Parent</li>
+		</BanRelations>
+		<Opposition> 对立特性
+			<li>StinkAllOver</li>
+			<li>Slovenly</li>
+		</Opposition>
+		<Close>亲近特性
+			<li>Cleanliness</li>
+		</Close>
+		<MoodBranch> 心情分支
+			<li Old="BedroomExpect8" New="BedroomExpect6"/>
+		</MoodBranch>
+		<ModifierDef>
+			<BaseFive>0,0,0,0,0</BaseFive>
+			<Properties>
+				<li Name="MoveSpeed" AddV="5" AddP="0.5"/>
+				<li Name="VisionRadius" AddP="-0.5"/>
+			</Properties>
+			<Skills>
+				<li Name="Building" Level="1"/>
+				<li Name="Mining" Level="2"/>
+			</Skills>
+			<BanBodyParts>
+				<li>LeftEye</li>
+			</BanBodyParts>
+			<BanJobs>
+				<li>Clean</li>
+				<li>Build</li>
+			</BanJobs>
+			<Damages>
+				<li Part="LeftThighbone" Damage="Scar" Value="0.5"/>
+			</Damages>
+			<Moods>
+				<li>Optimistic</li>
+			</Moods>
+			<GiveFavours>
+				<li>Scar</li>
+			</GiveFavours>
+			<GetFavours>
+				<li>Scar</li>
+			</GetFavours>
+		</ModifierDef>
+	</Feature> 
+	-->
+	
+	<Feature Name="BH_WaiWuQuanNeng" Type="Backstory">
+		<DisplayName>百合花仙·外务全能</DisplayName>
+		<Desc>[NAME]对于外门事务了如指掌，用有着极强的动手能力，甚至某些时候还能边工作边和一位漂亮的女同门来一场唯美的邂逅！愿百合花为她绽放！</Desc>
+		<HideInUI>0</HideInUI>
+		<ModifierDef>
+		    <BaseFive>0,0,0,0,0</BaseFive>
+			<Skills>
+				<li Name="Medicine" Level="110"/><!-- 岐黄 -->
+				<li Name="Cooking" Level="110"/><!-- 烹饪 -->
+				<li Name="Building" Level="110"/><!-- 建筑 -->
+				<li Name="Farming" Level="110"/><!-- 农事 -->
+				<li Name="Mining" Level="110"/><!-- 采掘 -->
+				<li Name="Art" Level="110"/><!-- 巧匠 -->
+				<li Name="Manual" Level="110"/><!-- 制造 -->
+				<li Name="SocialContact" Level="110"/><!-- 社交 -->
+				
+				<li Name="Medicine" LevelOver="9"/><!-- 岐黄等级上限  -->
+				<li Name="Cooking" LevelOver="9"/><!-- 烹饪等级上限  -->
+				<li Name="Building" LevelOver="9"/><!-- 建筑等级上限  -->
+				<li Name="Farming" LevelOver="9"/><!-- 农事等级上限  -->
+				<li Name="Mining" LevelOver="9"/><!-- 采掘等级上限  -->
+				<li Name="Art" LevelOver="9"/><!-- 巧匠等级上限  -->
+				<li Name="Manual" LevelOver="9"/><!-- 制造等级上限  -->
+				<li Name="SocialContact" LevelOver="9"/><!-- 社交等级上限 -->
+			</Skills>
+			<Properties>
+				<li Name="FatigueConsumeConstant" AddV="-1"/><!--睡眠时间减少-->
+				<li Name="BaseEmotionAddV" AddV="100"/><!--心情值-->
+				<li Name="PainTolerance" AddV="10"/><!--疼痛忍受极限10-->
+				<li Name="MoveSpeed" AddP="20.48"/><!--移动速度-->
+			</Properties>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="BH_WanDaoSuiXin" Type="Backstory">
+		<DisplayName>百合花仙·万道随心</DisplayName>
+		<Desc>[NAME]对于修炼之道拥有着极强的感悟，同境界中基本难寻敌手，有些时候甚至可以边斗法边和同门师姐妹卿卿我我！愿百合花为她绽放！</Desc>
+		<HideInUI>0</HideInUI>
+		<ModifierDef>
+		    <BaseFive>10,10,10,10,10</BaseFive>
+			<Skills>
+				<li Name="Fabao" Level="36"/><!-- 法宝 36-->
+				<li Name="DouFa" Level="36"/><!-- 斗法 36-->
+				<li Name="Barrier" Level="36"/><!-- 护盾 36-->
+				<li Name="Zhen" Level="36"/><!-- 阵法 36-->
+				<li Name="FightSkill" Level="36"/><!-- 术法 36-->
+				<li Name="DanQi" Level="36"/><!-- 丹器 36-->
+				<li Name="Fight" Level="36"/><!-- 御物 36-->
+				<li Name="Qi" Level="36"/><!-- 气感 36-->
+				
+				<li Name="Fight" LevelOver="18"/><!-- 御物等级上限 -->
+				<li Name="Qi" LevelOver="18"/><!-- 气感等级上限 -->
+				<li Name="Fabao" LevelOver="18"/><!-- 法宝等级上限 -->
+				<li Name="DouFa" LevelOver="18"/><!-- 斗法等级上限 -->
+				<li Name="FightSkill" LevelOver="18"/><!-- 术法等级上限 -->
+				<li Name="DanQi" LevelOver="18"/><!-- 丹器等级上限 -->
+				<li Name="Barrier" LevelOver="18"/><!-- 护盾等级上限 -->
+				<li Name="Zhen" LevelOver="18"/><!-- 阵法等级上限 -->
+			</Skills>
+			<Properties>
+				<li Name="MaxAccumulativeLingAddV" AddV="4096"/><!--炉鼎值-->
+				<li Name="NpcLingMaxValue" AddV="2048"/><!--基础灵气最大值-->
+				<li Name="MindStateBaseValue" AddV="100"/><!--心境值-->
+				<li Name="SpeedOfMindStateCoefficient" AddP="-1"/><!--心境稳定值-->
+			</Properties>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="BH_MiBaoQinHe" Type="Backstory">
+		<DisplayName>百合花仙·秘宝亲和</DisplayName>
+		<Desc>[NAME]天生便与各种法宝拥有着强烈的共鸣能力，即便只是随意施展，也强过无数人拼尽全力，和她切磋法宝的漂亮女修最终基本都被她赢去床上切磋了！愿百合花为她绽放！</Desc>
+		<HideInUI>0</HideInUI>
+		<ModifierDef>
+		    <BaseFive>10,10,10,10,10</BaseFive>
+			<Skills>
+			</Skills>
+			<Properties>
+				<li Name="NpcFight_FabaoNum" AddV="6"/><!--法宝数量6-->
+				<li Name="NpcFight_FabaoLingRecoverAddP" AddV="0.35"/> <!-- 法宝灵气恢复速度加成 -->
+				<li Name="NpcFight_FabaoRepelResistanceAddV" AddV="0.35"/> <!-- 法宝击退距离抗性 -->
+				<li Name="NpcFight_FabaoTrailingLengthAddP" AddV="0.35"/> <!-- 法宝拖尾长度加成 -->
+				<li Name="NpcFight_FabaoRepelDistanceAddV" AddV="0.35"/> <!-- 法宝击退距离加成 -->
+				<li Name="NpcFight_FabaoTurnSpeedAddP" AddV="0.35"/> <!-- 法宝转向速度加成 -->
+				<li Name="NpcFight_FabaoFlySpeedAddP" AddV="0.35"/> <!-- 法宝飞行速度加成 -->
+				<li Name="NpcFight_FabaoLingRecoverK" AddV="0.35"/> <!-- 法宝回灵倍率 -->
+				<li Name="NpcFight_FabaoPowerAddP" AddV="0.35"/> <!-- 法宝威力加成 -->
+			</Properties>
+		</ModifierDef>
+	</Feature>
+	
+	<Feature Name="BH_BaiHeSaiGao" Type="Backstory"><!--标记特质，若无该特质便不会触发百合剧情-->
+		<DisplayName>百合花仙·百合赛高</DisplayName>
+		<Desc>[NAME]好像倍被冥冥之中的某个存在给盯上了，因此这一生都不会与男子产生任何的兴趣了！愿百合花为我们绽放！</Desc>
+		<HideInUI>0</HideInUI>
+		<ModifierDef>
+		    <BaseFive>10,10,10,10,10</BaseFive>
+			<Skills>
+			</Skills>
+			<Properties>
+				<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="1"/><!--修炼速度提升-->
+			</Properties>
+			<GiveFavours>
+				<li>BH_QianZaiDeJiYou</li>
+			</GiveFavours>
+		</ModifierDef>
+	</Feature>
+
+	
+</List></FeatureDefs>

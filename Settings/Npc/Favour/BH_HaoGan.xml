@@ -1,0 +1,33 @@
+<FavourDefs><List>
+	
+	<Favour Name="BH_JiaReng" Type="Normal"><!--百合花仙·家人关系-->
+		<DisplayName>[TXT]</DisplayName>
+		<Desc>[HENAME]是我的[TXT]！</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>100</Value>
+		<MaxStack>1</MaxStack>
+		<Duration>0</Duration>
+		<Opinions>3</Opinions>
+	</Favour> 
+	
+	<Favour Name="BH_QianZaiDeJiYou" Type="Normal"><!--百合花仙·潜在的姬友关系-->
+		<DisplayName>潜在的姬友</DisplayName>
+		<Desc>[HENAME]同样为百合花仙所注视，是我潜在的姬友,也许我该试试能不能和她来一次唯美的邂逅！</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>25</Value>
+		<MaxStack>1</MaxStack>
+		<Duration>0</Duration>
+		<Opinions>0</Opinions>
+	</Favour>
+	
+	<Favour Name="BH_JiYou" Type="Normal"><!--百合花仙·姬友关系-->
+		<DisplayName>姬友</DisplayName>
+		<Desc>[HENAME]是我的姬友！</Desc>
+		<HideInUI>0</HideInUI>
+		<Value>100</Value>
+		<MaxStack>1</MaxStack>
+		<Duration>0</Duration>
+		<Opinions>3</Opinions>
+	</Favour>
+	
+</List></FavourDefs>
